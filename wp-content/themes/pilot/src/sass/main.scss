@@ -1,0 +1,49 @@
+
+// Libraries
+
+// Optional: @import "../../bower_components/compass-mixins/lib/compass";
+@import "../../bower_components/susy/sass/susy";
+@import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
+@import "../../bower_components/normalize-css/normalize";
+@import "../../bower_components/animate.scss/scss/animate";
+@import "../../bower_components/wow/css/libs/animate";
+
+
+// Theme Configuration
+
+@import "variables";
+@import "base";
+@import "mixins";
+@import "type";
+@import "layout";
+
+// views
+
+@import "views/navigation";
+@import "views/header";
+@import "views/footer";
+
+// Pages
+
+@import "pages/home";
+@import "pages/sample";
+
+// Magnific Popup
+@import "magnific/magnific";
+
+// Modules
+
+@import "../../includes/modules/modules";
+
+// Global Rules
+
+body{
+	background: white;
+	margin:0px;
+	padding:0px;
+}
+
+.container{
+	@include container($container);
+	overflow: hidden;
+}

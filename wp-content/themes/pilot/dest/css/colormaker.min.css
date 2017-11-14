@@ -1,0 +1,76 @@
+/* Color Block block-name 
+- should be .color-class-name for production
+ or .default-color-class for development
+*/
+.color-class-name h1, .color-class-name h2, .color-class-name h3, .color-class-name h4, .color-class-name h5, .color-class-name h6, .color-class-name.module h1, .color-class-name.module h2, .color-class-name.module h3, .color-class-name.module h4, .color-class-name.module h5, .color-class-name.module h6 {
+  color: colormaker_five; }
+
+.color-class-name #nav-wrap, .color-class-name.module #nav-wrap {
+  background-color: colormaker_two; }
+
+.color-class-name .site-footer, .color-class-name.module .site-footer {
+  background-color: colormaker_two; }
+
+.color-class-name.block-posts-slider, .color-class-name .block-posts-slider, .color-class-name.module.block-posts-slider, .color-class-name.module .block-posts-slider {
+  color: colormaker_five; }
+  .color-class-name.block-posts-slider .slick-prev svg, .color-class-name.block-posts-slider .slick-next svg, .color-class-name .block-posts-slider .slick-prev svg, .color-class-name .block-posts-slider .slick-next svg, .color-class-name.module.block-posts-slider .slick-prev svg, .color-class-name.module.block-posts-slider .slick-next svg, .color-class-name.module .block-posts-slider .slick-prev svg, .color-class-name.module .block-posts-slider .slick-next svg {
+    fill: colormaker_five; }
+
+.color-class-name.block-table .link-title, .color-class-name .block-table .link-title, .color-class-name.module.block-table .link-title, .color-class-name.module .block-table .link-title {
+  color: colormaker_two; }
+
+.color-class-name.block-media .title .title-wrap a::after, .color-class-name .block-media .title .title-wrap a::after, .color-class-name.module.block-media .title .title-wrap a::after, .color-class-name.module .block-media .title .title-wrap a::after {
+  background-color: colormaker_two; }
+
+.color-class-name.block-media .bg-image, .color-class-name .block-media .bg-image, .color-class-name.module.block-media .bg-image, .color-class-name.module .block-media .bg-image {
+  background-color: colormaker_four; }
+
+.color-class-name.block-banner div p, .color-class-name .block-banner div p, .color-class-name.module.block-banner div p, .color-class-name.module .block-banner div p {
+  color: colormaker_three; }
+
+.color-class-name.block-banner a, .color-class-name .block-banner a, .color-class-name.module.block-banner a, .color-class-name.module .block-banner a {
+  background-color: colormaker_five; }
+
+.color-class-name.block-accordion dt, .color-class-name .block-accordion dt, .color-class-name.module.block-accordion dt, .color-class-name.module .block-accordion dt {
+  color: colormaker_three; }
+
+.color-class-name.block-accordion svg, .color-class-name .block-accordion svg, .color-class-name.module.block-accordion svg, .color-class-name.module .block-accordion svg {
+  fill: colormaker_three; }
+
+.color-class-name.block-image-popup .slide-wrapper:hover .slide-text, .color-class-name.block-image-popup .slide-wrapper.active .slide-text, .color-class-name .block-image-popup .slide-wrapper:hover .slide-text, .color-class-name .block-image-popup .slide-wrapper.active .slide-text, .color-class-name.module.block-image-popup .slide-wrapper:hover .slide-text, .color-class-name.module.block-image-popup .slide-wrapper.active .slide-text, .color-class-name.module .block-image-popup .slide-wrapper:hover .slide-text, .color-class-name.module .block-image-popup .slide-wrapper.active .slide-text {
+  background-color: colormaker_five; }
+
+.color-class-name.block-image-popup .slide-wrapper .slide-text .title, .color-class-name .block-image-popup .slide-wrapper .slide-text .title, .color-class-name.module.block-image-popup .slide-wrapper .slide-text .title, .color-class-name.module .block-image-popup .slide-wrapper .slide-text .title {
+  color: colormaker_five; }
+
+.color-class-name.block-image-popup .slide-wrapper .slide-text .subtitle, .color-class-name .block-image-popup .slide-wrapper .slide-text .subtitle, .color-class-name.module.block-image-popup .slide-wrapper .slide-text .subtitle, .color-class-name.module .block-image-popup .slide-wrapper .slide-text .subtitle {
+  color: colormaker_two; }
+
+.color-class-name.block-slider h3, .color-class-name .block-slider h3, .color-class-name.module.block-slider h3, .color-class-name.module .block-slider h3 {
+  background-color: colormaker_two; }
+
+.color-class-name.block-slider .slick-slide, .color-class-name .block-slider .slick-slide, .color-class-name.module.block-slider .slick-slide, .color-class-name.module .block-slider .slick-slide {
+  border-right: 2px solid colormaker_two;
+  border-bottom: 2px solid colormaker_two; }
+
+.color-class-name.block-info dl dt, .color-class-name .block-info dl dt, .color-class-name.module.block-info dl dt, .color-class-name.module .block-info dl dt {
+  color: colormaker_three; }
+
+.color-class-name.block-info dl dd svg, .color-class-name .block-info dl dd svg, .color-class-name.module.block-info dl dd svg, .color-class-name.module .block-info dl dd svg {
+  fill: colormaker_five; }
+
+.color-class-name .slide:hover .slide-text, .color-class-name.module .slide:hover .slide-text {
+  background-color: colormaker_five; }
+  .color-class-name .slide:hover .slide-text span, .color-class-name.module .slide:hover .slide-text span {
+    color: white; }
+
+.color-class-name .slide .slide-text span.lede, .color-class-name .slide .slide-text span.category, .color-class-name.module .slide .slide-text span.lede, .color-class-name.module .slide .slide-text span.category {
+  color: colormaker_three; }
+
+.color-class-name .slide .slide-text span.title, .color-class-name.module .slide .slide-text span.title {
+  color: colormaker_five; }
+
+.color-class-name .slide .slide-text span.subtitle, .color-class-name .slide .slide-text span.author, .color-class-name.module .slide .slide-text span.subtitle, .color-class-name.module .slide .slide-text span.author {
+  color: colormaker_two; }
+
+/*# sourceMappingURL=colormaker.min.css.map */

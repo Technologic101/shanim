@@ -1,0 +1,18 @@
+
+.sample {
+  @include container(1080px);
+
+  .content {
+
+    @media #{$bp-tab} {
+      @include span(12);
+    }
+  }
+
+  .animations {
+    .wow {
+      text-align: center;
+      padding: .5em;
+    }
+  }
+}

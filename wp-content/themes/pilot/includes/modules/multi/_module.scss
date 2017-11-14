@@ -1,0 +1,57 @@
+.block-multi {
+	margin:0px;
+	padding:0px;
+
+	.layout-content {
+	}
+
+	.flex-wrap {
+		display: flex;
+		align-items: center;
+
+		@media #{$bp-tab} {
+			flex-direction: column;
+		}
+	}
+
+	.title {
+		width:50%;
+		margin:0px;
+
+		@media #{$bp-tab} {
+			width: 100%;
+			order: 2;
+		}
+
+		h3 {	
+		}
+
+		.subtitle {
+			@include h5-style();
+		}
+		
+		.content {
+		}
+
+		.title-wrap{
+			width: 80%;
+			max-width: 460px;
+			margin:20px auto;
+		}
+
+	}
+
+	.column_image {
+		width:50%;
+
+		img {
+			width:100%;
+			display:block;
+		}
+
+		@media #{$bp-tab} {
+			order: 1;
+			width: 100%;
+		}
+	}
+}

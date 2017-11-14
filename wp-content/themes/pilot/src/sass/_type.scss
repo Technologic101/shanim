@@ -1,0 +1,73 @@
+html {
+  @include default-font();
+}
+
+// Copy & Lists 
+p {
+}
+
+ul li,
+ol li {
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:hover, &:active, &:focus, &:visited {
+    color: inherit;
+  }
+}
+
+// Headings 
+
+h1 {
+  @include h2-style();
+}
+h2 {
+  @include h2-style();
+}
+h3 {
+  @include h3-style();
+}
+h4 {
+  @include h4-style();
+}
+h5 {
+  @include h5-style();
+}
+h6 {
+  &::before {
+    content: "Why are you using an h6 tag??  Tony does not approve.";
+    color: red;
+    display: block;
+    z-index: 1000;
+    position: relative;
+  }
+}
+
+// Tables
+table {
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0;
+  line-height: 33px;
+}
+
+// Code Blocks
+code {
+  vertical-align: bottom;
+}

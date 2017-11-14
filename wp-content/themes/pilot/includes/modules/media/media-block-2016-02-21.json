@@ -1,0 +1,856 @@
+[
+    {
+        "key": "group_567c3f9605502",
+        "title": "Custom Content",
+        "fields": [
+            {
+                "key": "field_567c3f9c0e630",
+                "label": "Content Blocks",
+                "name": "content_blocks",
+                "type": "flexible_content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "button_label": "Add a Content Block",
+                "min": "",
+                "max": "",
+                "layouts": [
+                    {
+                        "key": "567c402379f4e",
+                        "name": "media_block",
+                        "label": "Media Block",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_568c3e92d7c13",
+                                "label": "Type",
+                                "name": "media_block_type",
+                                "type": "radio",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "image": "Image",
+                                    "video_url": "Video"
+                                },
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "image : Image",
+                                "layout": "horizontal"
+                            },
+                            {
+                                "key": "field_568e6b7289c85",
+                                "label": "Width",
+                                "name": "media_block_width",
+                                "type": "radio",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "full_width": "Full Width",
+                                    "half_width": "Two Half Width Blocks"
+                                },
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "",
+                                "layout": "vertical"
+                            },
+                            {
+                                "key": "field_567c403c0e631",
+                                "label": "Image",
+                                "name": "media_block_image",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_568c3e92d7c13",
+                                            "operator": "==",
+                                            "value": "image"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "preview_size": "thumbnail",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_568c45b9b87f9",
+                                "label": "Video MP4",
+                                "name": "media_video_file_mp4",
+                                "type": "file",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_568c3e92d7c13",
+                                            "operator": "==",
+                                            "value": "video_file"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "library": "all",
+                                "min_size": "",
+                                "max_size": "",
+                                "mime_types": "mp4"
+                            },
+                            {
+                                "key": "field_568c4ac9cde48",
+                                "label": "Apply Filter to Image",
+                                "name": "media_block_modify",
+                                "type": "true_false",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 30,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "",
+                                "default_value": 0
+                            },
+                            {
+                                "key": "field_568c4afdcde49",
+                                "label": "Opacity",
+                                "name": "media_block_overlay_opacity",
+                                "type": "number",
+                                "instructions": "Set from 0 to 1 (for example 0.75)",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_568c4ac9cde48",
+                                            "operator": "==",
+                                            "value": "1"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 35,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": 0,
+                                "max": 1,
+                                "step": ".01",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_568c4c5cf3225",
+                                "label": "Color",
+                                "name": "media_block_overlay_color",
+                                "type": "color_picker",
+                                "instructions": "Set the color overlay for the image or video",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_568c4ac9cde48",
+                                            "operator": "==",
+                                            "value": "1"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 35,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": ""
+                            },
+                            {
+                                "key": "field_56943cf867a62",
+                                "label": "Logo or Title",
+                                "name": "media_block_logo_or_title",
+                                "type": "radio",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "logo": "Logo",
+                                    "title": "Title"
+                                },
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "",
+                                "layout": "horizontal"
+                            },
+                            {
+                                "key": "field_567c58eff6f30",
+                                "label": "Title",
+                                "name": "media_block_title",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56943cf867a62",
+                                            "operator": "==",
+                                            "value": "title"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_56943e1867a63",
+                                "label": "Logo",
+                                "name": "media_block_logo",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56943cf867a62",
+                                            "operator": "==",
+                                            "value": "logo"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "preview_size": "thumbnail",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_567c58fff6f31",
+                                "label": "Subtitle",
+                                "name": "media_block_subtitle",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_567c5919f6f32",
+                                "label": "Button Text",
+                                "name": "media_block_button_text",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_568c3e92d7c13",
+                                            "operator": "==",
+                                            "value": "image"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 33,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_569541f5e33a5",
+                                "label": "Button Link",
+                                "name": "media_block_button_href",
+                                "type": "post_object",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_568c3e92d7c13",
+                                            "operator": "==",
+                                            "value": "image"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 33,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "post_type": [],
+                                "taxonomy": [],
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "return_format": "object",
+                                "ui": 1
+                            },
+                            {
+                                "key": "field_56af12ef29b5b",
+                                "label": "External Button Link",
+                                "name": "media_block_custom_button_href",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_568c3e92d7c13",
+                                            "operator": "==",
+                                            "value": "image"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 33,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_56c9f0e7d7b1f",
+                                "label": "2nd Image",
+                                "name": "media_block_image_second",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_568c3e92d7c13",
+                                            "operator": "==",
+                                            "value": "image"
+                                        },
+                                        {
+                                            "field": "field_568e6b7289c85",
+                                            "operator": "==",
+                                            "value": "half_width"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "preview_size": "thumbnail",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_56c9f0f9d7b20",
+                                "label": "2nd Video MP4",
+                                "name": "media_video_file_mp4_second",
+                                "type": "file",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_568c3e92d7c13",
+                                            "operator": "==",
+                                            "value": "video_url"
+                                        },
+                                        {
+                                            "field": "field_568e6b7289c85",
+                                            "operator": "==",
+                                            "value": "half_width"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "library": "all",
+                                "min_size": "",
+                                "max_size": "",
+                                "mime_types": "mp4"
+                            },
+                            {
+                                "key": "field_56c9f21ad2fed",
+                                "label": "Apply Filter to 2nd Image",
+                                "name": "media_block_modify_second",
+                                "type": "true_false",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_568e6b7289c85",
+                                            "operator": "==",
+                                            "value": "half_width"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 30,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "",
+                                "default_value": 0
+                            },
+                            {
+                                "key": "field_56c9f238d2fee",
+                                "label": "Opacity on 2nd Image",
+                                "name": "media_block_overlay_opacity_second",
+                                "type": "number",
+                                "instructions": "Set from 0 to 1 (for example 0.75)",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56c9f21ad2fed",
+                                            "operator": "==",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "field": "field_568e6b7289c85",
+                                            "operator": "==",
+                                            "value": "half_width"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 35,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": 0,
+                                "max": 1,
+                                "step": ".01",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_56c9f253d2ff0",
+                                "label": "Color on 2nd Image",
+                                "name": "media_block_overlay_color_second",
+                                "type": "color_picker",
+                                "instructions": "Set the color overlay for the image or video",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56c9f21ad2fed",
+                                            "operator": "==",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "field": "field_568e6b7289c85",
+                                            "operator": "==",
+                                            "value": "half_width"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 35,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": ""
+                            },
+                            {
+                                "key": "field_56c9f26ed2ff2",
+                                "label": "Logo or Title on 2nd Block",
+                                "name": "media_block_logo_or_title_second",
+                                "type": "radio",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_568e6b7289c85",
+                                            "operator": "==",
+                                            "value": "half_width"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "logo": "Logo",
+                                    "title": "Title"
+                                },
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "",
+                                "layout": "horizontal"
+                            },
+                            {
+                                "key": "field_56c9f283d2ff3",
+                                "label": "2nd Title",
+                                "name": "media_block_title_second",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56c9f26ed2ff2",
+                                            "operator": "==",
+                                            "value": "title"
+                                        },
+                                        {
+                                            "field": "field_568e6b7289c85",
+                                            "operator": "==",
+                                            "value": "half_width"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_56c9f36e682e5",
+                                "label": "2nd Logo",
+                                "name": "media_block_logo_second",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56c9f26ed2ff2",
+                                            "operator": "==",
+                                            "value": "logo"
+                                        },
+                                        {
+                                            "field": "field_568e6b7289c85",
+                                            "operator": "==",
+                                            "value": "half_width"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "preview_size": "thumbnail",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_56c9f4b25e394",
+                                "label": "2nd Subtitle",
+                                "name": "media_block_subtitle_second",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_568e6b7289c85",
+                                            "operator": "==",
+                                            "value": "half_width"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_56c9f4c95e395",
+                                "label": "2nd Button Text",
+                                "name": "media_block_button_text_second",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_568e6b7289c85",
+                                            "operator": "==",
+                                            "value": "half_width"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 33,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_56c9f4e15e396",
+                                "label": "2nd Button Link",
+                                "name": "media_block_button_href_second",
+                                "type": "post_object",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_568e6b7289c85",
+                                            "operator": "==",
+                                            "value": "half_width"
+                                        },
+                                        {
+                                            "field": "field_568c3e92d7c13",
+                                            "operator": "==",
+                                            "value": "image"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 33,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "post_type": [],
+                                "taxonomy": [],
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "return_format": "object",
+                                "ui": 1
+                            },
+                            {
+                                "key": "field_56c9f51b5e398",
+                                "label": "2nd External Button Link",
+                                "name": "media_block_custom_button_href_second",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_568c3e92d7c13",
+                                            "operator": "==",
+                                            "value": "image"
+                                        },
+                                        {
+                                            "field": "field_568e6b7289c85",
+                                            "operator": "==",
+                                            "value": "half_width"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 33,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_568e6c04f59bb",
+                                "label": "Block Color",
+                                "name": "media_block_color",
+                                "type": "radio",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": [
+                                    "<span>No Color Blocks are defined. <a href='\/wp-admin\/admin.php?page=colormaker-settings'>Define them.<\/a><\/span>"
+                                ],
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "",
+                                "layout": "horizontal"
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

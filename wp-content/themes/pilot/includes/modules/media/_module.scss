@@ -1,0 +1,28 @@
+.block-media{
+	.bg-image{
+		margin:0px;
+		padding:0px;
+		width:100%;
+		height:700px;
+		text-align:center;
+		background-size:cover;
+
+		.title{
+			@include vertical-align($position: relative);
+
+			h2{
+				@include h2-style($color: white);
+			}
+
+			.subtitle{
+				@include h5-style($color: white);
+				display: block;
+				margin-bottom: $bottom-margin / 2;
+			}
+
+			a{
+				@include button(5px 10px, $c-white, $c-white, $c-black);
+			}
+		}
+	}
+}

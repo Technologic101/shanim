@@ -1,0 +1,28 @@
+.site-header{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	background: $c-white;
+
+	.top_section{
+		margin:0 auto;
+		padding:0px;
+		width:96%;
+		position:relative;
+		@media #{$bp-tab}{
+			padding:0 10px;
+		}
+	}
+	.site-branding{
+		margin:0px;
+		padding:20px 0;
+		@include span(4);
+		@media #{$bp-tab}{
+			padding:25px 0px;
+		}
+		h1{
+			margin: 0;
+			@include h5-style();
+		}		
+	}
+}

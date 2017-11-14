@@ -1,0 +1,108 @@
+.block-slider {
+  position: relative;
+
+	h3{
+		@include h5-style();
+		text-align:center;
+		padding: $block-padding 0;
+		margin: 0;
+	}
+	.slider-block {
+		position: relative;
+	}
+	
+	.slick-prev, .slick-next {
+		display: inline-block;
+		border: none;
+		text-indent: -9999px;
+    z-index: 99;
+		width: 50px;
+		height: 56px;
+
+		&:focus{
+			outline:none;
+		}
+	}
+
+	.slick-prev{
+		left: 25px;
+	}
+
+	.slick-next{
+		right: 5px;
+	}
+
+	.bg-image {
+		background-size: cover;
+		position: relative;
+		width: 100%;
+		margin-bottom:0;
+		background-position: center;
+		-webkit-border-radius: 0%;
+		-moz-border-radius: 0%;
+		border-radius: 0%;
+		overflow: hidden;
+		cursor: pointer;
+		-webkit-transition: .3s ease;
+		transition: .3s ease;
+	}
+
+	+ .block-slider {
+		border-top: 1px solid $medium-grey;
+	}
+}
+
+
+.single-image-slider{
+
+	.bg-image{
+		height: 582px;
+	}
+
+	.slick-list {
+		 width:100%;
+		 margin:0 auto;
+	}
+
+	.slick-prev, .slick-next {
+    @include vertical-align(absolute); 
+	}
+
+	.slick-prev{
+		background:url(../../image/left-arrow.png) no-repeat 0 0;
+	}
+
+	.slick-next{
+		background:url(../../image/right-arrow.png) no-repeat 0 0;
+	}
+}
+
+.multi-image-slider{	
+
+	.bg-image{
+		height: 250px;
+		border: 0;
+	}
+
+	.slick-prev, .slick-next {
+		position: absolute;
+		width: 25px;
+		height: 30px;
+    top: -25%;
+	}
+
+	.slick-prev{
+		background:url(../../image/left-arrow-black.png) no-repeat center center;
+		left: 12%;
+	}
+
+	.slick-next{
+		background:url(../../image/right-arrow-black.png) no-repeat center center;
+		right: 12%;
+	}
+
+	.container{
+		width:100%;
+		max-width:none;
+	}
+}

@@ -1,0 +1,44 @@
+
+// Colors
+
+$c-white: #fff;
+$c-black: #000;
+$accent: #03a9f4;
+$body-grey: #eee; 
+$light-grey: #e6e6e6;
+$medium-grey: #ccc;
+$dark-grey: #8a8a8a;
+
+// Layout
+
+$block-padding: 2rem;
+$top-margin: $block-padding;
+$top-padding: $block-padding;
+$bottom-margin: $block-padding;
+$bottom-padding: $block-padding;
+
+$block-padding-half: $block-padding / 2;
+
+$element-spacing: 20px;
+
+// Typography
+
+$font-1: Georgia;
+$font-2: Arial, sans-serif;
+
+// Media Queries
+
+$bp-mobile:	"only screen and (max-width: 480px)";
+$bp-tab-sm: "only screen and (max-width: 600px)";
+$bp-tab:	"only screen and (max-width: 768px)";
+$bp-desk:	"only screen and (max-width: 992px)";
+$bp-desk-lg: "only screen and (max-width: 1200px)";
+$bp-mobile-padding: "only screen and (max-width: 1240px)"; // $bp-desk-lg + mobile side padding
+
+// Susy Settings (add as needed in base)
+
+$gutter-position: after;
+$container: 1200px;
+$columns: 12;
+$gutters: 1;
+$box-sizing: border-box;

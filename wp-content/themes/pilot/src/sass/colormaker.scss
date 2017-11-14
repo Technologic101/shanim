@@ -1,0 +1,176 @@
+// for each color, set the color name to equivalent of 'colormaker_1' for corresponding color i.e.:
+//$color_1 : colormaker_one;
+//$color_2 : colormaker_two;
+
+$color_1 : colormaker_one;
+$color_2 : colormaker_two;
+$color_3 : colormaker_three;
+$color_4 : colormaker_four;
+$color_5 : colormaker_five;
+
+/* Color Block block-name 
+- should be .color-class-name for production
+ or .default-color-class for development
+*/
+
+.color-class-name, .color-class-name.module {
+
+	h1, h2, h3, h4, h5, h6 {
+    color: $color_5;
+  }
+
+
+  // Header
+
+  #nav-wrap {
+    background-color: $color_2;
+
+    .main-navigation {
+
+    }
+
+  }
+
+
+  // Footer
+
+  .site-footer {
+    background-color: $color_2;
+  }
+
+
+  // Blocks
+
+  &.block-posts-slider, .block-posts-slider {
+    color: $color_5;
+
+    .slick-prev, .slick-next {
+      svg {
+        fill: $color_5;
+      }
+    }
+  }
+
+  &.block-table, .block-table {
+    .link-title {
+      color: $color_2;
+    }
+  }
+
+  &.block-media, .block-media {
+    .title {
+      .title-wrap {
+        a {
+          &::after {
+            background-color: $color_2;
+          }
+        }
+      }
+    }
+
+    .bg-image {
+      background-color: $color_4;
+    }
+  }
+
+  &.block-banner, .block-banner {
+
+    div {
+      p {
+        color: $color_3;
+      }
+    }
+
+    a {
+      background-color: $color_5;
+    }
+  }
+
+  &.block-accordion, .block-accordion {
+    dt {
+      color: $color_3;
+    }
+
+    svg {
+      fill: $color_3;
+    }
+  }
+
+  &.block-image-popup, .block-image-popup {
+    .slide-wrapper {
+
+      &:hover, &.active {
+        .slide-text {
+          background-color: $color_5;
+        }
+      }
+      .slide-text {
+
+        .title {
+          color: $color_5;
+        }
+
+        .subtitle {
+          color: $color_2;
+        }
+      }
+    }
+  }
+
+  &.block-slider, .block-slider {
+    h3 {
+      background-color: $color_2;
+    }
+
+    .slick-slide {
+      border-right: 2px solid $color_2;
+      border-bottom: 2px solid $color_2;
+    }
+  }
+
+  &.block-info, .block-info {
+    dl {
+
+      dt {
+        color: $color_3;
+      }
+
+      dd {
+        svg {
+          fill: $color_5;
+        }
+      }
+    }
+  }
+
+
+  // General Use
+
+  .slide {
+    &:hover {
+      .slide-text {
+        span {
+          color: white;
+        }
+        background-color: $color_5;
+      }
+    }
+
+    .slide-text {
+      span {
+        &.lede, &.category {
+          color: $color_3;
+        }
+
+        &.title {
+          color: $color_5;
+        }
+
+        &.subtitle, &.author {
+          color: $color_2;
+        }
+      }
+    }
+  }
+
+}

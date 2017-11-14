@@ -1,0 +1,48 @@
+body{
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+.module {
+  clear: both;
+  margin-bottom: $bottom-margin;
+}
+
+// Block Level Elements (for uniform margin)
+// See: https://developer.mozilla.org/en-US/docs/HTML/Block-level_elements
+address,figcaption,ol,article,figure,output,aside,
+p,audio,form,pre,h1,h2,h3,h4,h5,h6,canvas,table,
+dd,hgroup,tfoot,hr,ul,dl,video,fieldset,noscript {
+    margin: 0 0 $element-spacing 0;
+}
+p{
+	@include default-font;
+}
+// Generally used as containers
+section, header, footer, blockquote {
+    margin: 0;
+}
+
+// Lists
+ul,ol {
+    padding: 0;
+
+    li {
+        padding: 0;
+    }
+}
+
+dl {
+    padding: 0;
+
+    dd {
+        padding: 0;
+    }
+}
