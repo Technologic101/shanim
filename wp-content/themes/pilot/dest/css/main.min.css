@@ -5416,16 +5416,16 @@ Individual components as necessary.
       padding-right: 20px; } }
 
 .padding-top {
-  padding-top: 2rem !important; }
+  padding-top: 5% !important; }
 
 .padding-bottom {
-  padding-bottom: 2rem !important; }
+  padding-bottom: 5% !important; }
 
 .margin-top {
-  padding-top: 2rem !important; }
+  padding-top: 5% !important; }
 
 .margin-bottom {
-  padding-top: 2rem !important; }
+  padding-top: 5% !important; }
 
 .clearfix:after, .table-links div:after {
   content: "";
@@ -5439,6 +5439,11 @@ Individual components as necessary.
   width: 1px;
   height: 1px;
   overflow: hidden; }
+
+.center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .aligncenter, a img.aligncenter {
   display: block;
@@ -5459,7 +5464,7 @@ Individual components as necessary.
   font-family: "Montseratt", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #000; }
+  color: #8a8a8a; }
 
 .pilot-video-button {
   padding: 5px 10px;
@@ -5478,7 +5483,7 @@ Individual components as necessary.
   .pilot-video-button:hover {
     background-color: #97c1e7;
     text-decoration: none;
-    color: #000;
+    color: #333;
     transition: .2s;
     transform: scale(1.1); }
   .pilot-video-button:hover {
@@ -5498,7 +5503,7 @@ Individual components as necessary.
   .pilot-button:hover {
     background-color: #97c1e7;
     text-decoration: none;
-    color: #000;
+    color: #333;
     transition: .2s;
     transform: scale(1.1); }
 
@@ -5506,7 +5511,7 @@ html {
   font-family: "Montseratt", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #000; }
+  color: #8a8a8a; }
 
 ul ul,
 ol ul,
@@ -5526,31 +5531,31 @@ h1 {
   font-family: "Montseratt", sans-serif;
   font-size: 60px;
   line-height: 80px;
-  color: #000; }
+  color: #333; }
 
 h2 {
   font-family: "Montseratt", sans-serif;
   font-size: 60px;
   line-height: 80px;
-  color: #000; }
+  color: #333; }
 
 h3 {
   font-family: "Montseratt", sans-serif;
   font-size: 40px;
-  color: #000;
+  color: #333;
   line-height: 50px;
   font-weight: normal; }
 
 h4 {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
-  color: #000;
+  color: #333;
   line-height: 40px; }
 
 h5 {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
-  color: #000;
+  color: #333;
   line-height: 24px;
   font-weight: bold; }
 
@@ -5583,9 +5588,13 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
+.module {
+  position: relative;
+  z-index: 1; }
+
 .module:not(:first-of-type) {
   clear: both;
-  margin-bottom: 2rem; }
+  margin-bottom: 5%; }
 
 address, figcaption, ol, article, figure, output, aside,
 p, audio, form, pre, h1, h2, h3, h4, h5, h6, canvas, table,
@@ -5596,7 +5605,7 @@ p {
   font-family: "Montseratt", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #000; }
+  color: #8a8a8a; }
 
 section, header, footer, blockquote {
   margin: 0; }
@@ -5615,7 +5624,7 @@ dl {
   margin: 0px;
   padding: 25px 0;
   text-align: right;
-  width: 65.2173913043%;
+  width: 73.9130434783%;
   float: right;
   margin-right: 0; }
   .main-navigation .menu-toggle {
@@ -5638,7 +5647,7 @@ dl {
     list-style: none;
     height: 50px; }
     .main-navigation ul li {
-      margin: 0 0 0 40px;
+      margin: 0 0 0 30px;
       padding: 0px;
       display: inline-block; }
       .main-navigation ul li a {
@@ -5648,7 +5657,7 @@ dl {
         font-family: "Montseratt", sans-serif;
         font-size: 16px;
         line-height: 24px;
-        color: #000;
+        color: #8a8a8a;
         font-size: 16px;
         color: #000;
         letter-spacing: 2px;
@@ -5716,7 +5725,8 @@ dl {
   height: 100px;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 2; }
   .site-header .logo {
     height: 60px;
     width: auto;
@@ -5733,7 +5743,7 @@ dl {
     margin: 0px;
     padding: 20px 0;
     height: 100px;
-    width: 30.4347826087%;
+    width: 21.7391304348%;
     float: left;
     margin-right: 4.347826087%; }
     @media only screen and (max-width: 768px) {
@@ -5743,6 +5753,21 @@ dl {
       margin: 0; }
     .site-header .site-branding a {
       display: inline-block; }
+
+.site-footer {
+  padding: 5% 0;
+  background-color: #333;
+  color: #FEFEFA;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: .8rem;
+  position: relative;
+  z-index: 2; }
+  .site-footer img {
+    width: 30%; }
+  .site-footer .footer-branding {
+    margin-bottom: 5%; }
 
 .sample {
   max-width: 1080px;
@@ -6113,7 +6138,7 @@ img.mfp-img {
 .block-accordion h3 {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
-  color: #000;
+  color: #333;
   line-height: 24px;
   font-weight: bold;
   text-align: center; }
@@ -6128,7 +6153,7 @@ img.mfp-img {
     .block-accordion .accordion-wrapper .accordion dt a {
       font-family: "Roboto", sans-serif;
       font-size: 20px;
-      color: #000;
+      color: #333;
       line-height: 24px;
       font-weight: bold;
       text-decoration: none; }
@@ -6194,7 +6219,7 @@ img.mfp-img {
     width: 50%;
     vertical-align: middle;
     background: #fff;
-    padding: 2rem 0; }
+    padding: 5% 0; }
   .block-alternating .innersection {
     width: 70%;
     margin: 0 auto;
@@ -6205,15 +6230,15 @@ img.mfp-img {
       font-family: "Montseratt", sans-serif;
       font-size: 50px;
       line-height: 60px;
-      color: #000;
+      color: #333;
       text-align: left;
       font-weight: normal; }
   .block-alternating .text {
     font-family: "Montseratt", sans-serif;
     font-size: 16px;
     line-height: 24px;
-    color: #000;
-    margin-bottom: 2rem; }
+    color: #8a8a8a;
+    margin-bottom: 5%; }
     .block-alternating .text span {
       display: block;
       font-size: 170px;
@@ -6225,7 +6250,8 @@ img.mfp-img {
   margin-left: auto;
   margin-right: auto;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background-color: #FEFEFA; }
   .block-generic_content:after {
     content: " ";
     display: block;
@@ -6237,7 +6263,7 @@ img.mfp-img {
   .block-generic_content .gc-wrap h3 {
     font-family: "Montseratt", sans-serif;
     font-size: 40px;
-    color: #000;
+    color: #333;
     line-height: 50px;
     font-weight: normal; }
   .block-generic_content .gc-content {
@@ -6247,11 +6273,11 @@ img.mfp-img {
       font-family: "Montseratt", sans-serif;
       font-size: 16px;
       line-height: 24px;
-      color: #000; }
+      color: #8a8a8a; }
       .block-generic_content .gc-content p strong {
         font-family: "Roboto", sans-serif;
         font-size: 20px;
-        color: #000;
+        color: #333;
         line-height: 24px;
         font-weight: bold; }
     .block-generic_content .gc-content ul {
@@ -6283,7 +6309,8 @@ img.mfp-img {
       font-family: "Montseratt", sans-serif;
       font-size: 60px;
       line-height: 80px;
-      color: white; }
+      color: white;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
     .block-media .bg-image .title .subtitle {
       font-family: "Roboto", sans-serif;
       font-size: 20px;
@@ -6291,7 +6318,7 @@ img.mfp-img {
       line-height: 24px;
       font-weight: bold;
       display: block;
-      margin-bottom: 1rem; }
+      margin-bottom: 2.5%; }
     .block-media .bg-image .title a {
       padding: 5px 10px;
       border: 2px solid #fff;
@@ -6306,12 +6333,15 @@ img.mfp-img {
       .block-media .bg-image .title a:hover {
         background-color: #fff;
         text-decoration: none;
-        color: #000;
+        color: #333;
         transition: .2s;
         transform: scale(1.1); }
 
-.entry-content .block-media:first-child .bg-image {
-  height: 100vh; }
+.entry-content .block-media:first-child {
+  position: relative;
+  z-index: 0; }
+  .entry-content .block-media:first-child .bg-image {
+    height: 100vh; }
 
 .block-multi {
   margin: 0px;
@@ -6332,7 +6362,7 @@ img.mfp-img {
     .block-multi .title .subtitle {
       font-family: "Roboto", sans-serif;
       font-size: 20px;
-      color: #000;
+      color: #333;
       line-height: 24px;
       font-weight: bold; }
     .block-multi .title .title-wrap {
@@ -6354,11 +6384,11 @@ img.mfp-img {
   .block-slider h3 {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
-    color: #000;
+    color: #333;
     line-height: 24px;
     font-weight: bold;
     text-align: center;
-    padding: 2rem 0;
+    padding: 5% 0;
     margin: 0; }
   .block-slider .slider-block {
     position: relative; }
@@ -6440,7 +6470,7 @@ img.mfp-img {
 .block-table h3 {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
-  color: #000;
+  color: #333;
   line-height: 24px;
   font-weight: bold; }
 
@@ -6466,12 +6496,12 @@ img.mfp-img {
       font-family: "Montseratt", sans-serif;
       font-size: 16px;
       line-height: 24px;
-      color: #000;
+      color: #8a8a8a;
       line-height: 30px; }
   .block-table .table-content h6 {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
-    color: #000;
+    color: #333;
     line-height: 24px;
     font-weight: bold; }
 
@@ -6494,24 +6524,24 @@ img.mfp-img {
     line-height: 1.5em;
     vertical-align: right; }
   .table-links .link-title {
-    margin-bottom: 1rem;
+    margin-bottom: 2.5%;
     font-family: "Roboto", sans-serif;
     font-size: 20px;
-    color: #000;
+    color: #333;
     line-height: 24px;
     font-weight: bold;
     font-weight: 400; }
   .table-links .link-wrap a {
     padding: 0px;
     text-decoration: none;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5%;
     font-weight: 400; }
 
 .table-links > div:last-child {
   border-bottom: none; }
 
 .block-flexbox_slides {
-  margin-bottom: 2rem; }
+  margin-bottom: 5%; }
   .block-flexbox_slides .wrapper {
     display: flex;
     justify-content: space-around;
@@ -6519,13 +6549,13 @@ img.mfp-img {
   .block-flexbox_slides h3 {
     font-family: "Montseratt", sans-serif;
     font-size: 40px;
-    color: #000;
+    color: #333;
     line-height: 50px;
     font-weight: normal;
     text-align: center; }
   .block-flexbox_slides .slide {
     width: 30%;
-    margin-bottom: 2rem; }
+    margin-bottom: 5%; }
     @media only screen and (max-width: 768px) {
       .block-flexbox_slides .slide {
         width: 48%; } }
@@ -6534,7 +6564,7 @@ img.mfp-img {
         width: 100%; } }
   .block-flexbox_slides .slide-inner {
     text-align: center;
-    margin: 0 auto 2rem;
+    margin: 0 auto 5%;
     border: 1px solid #ccc; }
   .block-flexbox_slides .slide-image {
     width: 100%;
@@ -6542,10 +6572,10 @@ img.mfp-img {
   .block-flexbox_slides .title {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
-    color: #000;
+    color: #333;
     line-height: 24px;
     font-weight: bold;
-    padding-top: 2rem; }
+    padding-top: 5%; }
   .block-flexbox_slides .slide-link a {
     padding: 5px 10px;
     border: 2px solid #97c1e7;
@@ -6557,11 +6587,11 @@ img.mfp-img {
     transition: .2s;
     transform: scale(1);
     letter-spacing: 2px;
-    margin-bottom: 2rem; }
+    margin-bottom: 5%; }
     .block-flexbox_slides .slide-link a:hover {
       background-color: #97c1e7;
       text-decoration: none;
-      color: #000;
+      color: #333;
       transition: .2s;
       transform: scale(1.1); }
   .block-flexbox_slides .content {
@@ -6572,7 +6602,7 @@ img.mfp-img {
       border: none; } }
 
 .block-post_slides {
-  margin-bottom: 2rem; }
+  margin-bottom: 5%; }
   .block-post_slides .wrapper {
     display: flex;
     justify-content: space-around;
@@ -6580,13 +6610,13 @@ img.mfp-img {
   .block-post_slides h3 {
     font-family: "Montseratt", sans-serif;
     font-size: 40px;
-    color: #000;
+    color: #333;
     line-height: 50px;
     font-weight: normal;
     text-align: center; }
   .block-post_slides .slide {
     width: 30%;
-    margin-bottom: 2rem; }
+    margin-bottom: 5%; }
     @media only screen and (max-width: 768px) {
       .block-post_slides .slide {
         width: 48%; } }
@@ -6595,7 +6625,7 @@ img.mfp-img {
         width: 100%; } }
   .block-post_slides .slide-inner {
     text-align: center;
-    margin: 0 auto 2rem;
+    margin: 0 auto 5%;
     border: 1px solid #ccc; }
   .block-post_slides .slide-image {
     width: 100%;
@@ -6603,10 +6633,10 @@ img.mfp-img {
   .block-post_slides .title {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
-    color: #000;
+    color: #333;
     line-height: 24px;
     font-weight: bold;
-    padding-top: 2rem; }
+    padding-top: 5%; }
   .block-post_slides .slide-link a {
     padding: 5px 10px;
     border: 2px solid #97c1e7;
@@ -6618,11 +6648,11 @@ img.mfp-img {
     transition: .2s;
     transform: scale(1);
     letter-spacing: 2px;
-    margin-bottom: 2rem; }
+    margin-bottom: 5%; }
     .block-post_slides .slide-link a:hover {
       background-color: #97c1e7;
       text-decoration: none;
-      color: #000;
+      color: #333;
       transition: .2s;
       transform: scale(1.1); }
   .block-post_slides .content {
@@ -6634,7 +6664,7 @@ img.mfp-img {
 
 .block-testimonials {
   background-color: black;
-  padding: 2rem 0 60px; }
+  padding: 5% 0 60px; }
   .block-testimonials .testimonials {
     text-align: center;
     width: 65.2173913043%;
@@ -6674,7 +6704,7 @@ img.mfp-img {
     .block-testimonials .testimonials .cite-1 {
       font-family: "Montseratt", sans-serif;
       font-size: 40px;
-      color: #000;
+      color: #333;
       line-height: 50px;
       font-weight: normal;
       margin-bottom: 0;
@@ -6818,7 +6848,7 @@ img.mfp-img {
   margin: 0 auto; }
 
 body {
-  background: white;
+  background: #FEFEFA;
   margin: 0px;
   padding: 0px; }
 

@@ -10,6 +10,10 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
+.module {
+  position: relative;
+  z-index: 1;
+}
 .module:not(:first-of-type) {
   clear: both;
   margin-bottom: $bottom-margin;

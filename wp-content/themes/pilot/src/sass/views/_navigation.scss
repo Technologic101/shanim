@@ -2,7 +2,7 @@
 	margin:0px;
 	padding:25px 0;
 	text-align:right;
-	@include span(8 at 5);
+	@include span(9 at 4);
 
 	.menu-toggle {
 		display:none;
@@ -27,7 +27,7 @@
 		height: 50px;
 
 		li {
-			margin:0 0 0 40px;
+			margin:0 0 0 30px;
 			padding:0px;
 			display:inline-block;
 

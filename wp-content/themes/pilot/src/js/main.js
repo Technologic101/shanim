@@ -12,7 +12,18 @@
 })();
 
 jQuery(document).ready(function($) {
-    console.log( "Your JS is ready" );
+	$(document).scroll(function() {
+	    var x = $(this).scrollTop();
+	    if ( $(window).width() > 768 ) {
+	        $('.home .block-media .bg-image').css({
+	            'transform' : 'translateY(' + x/1.5 + 'px)'
+	        });
+	        $('.home .block-media .title-wrap').css({
+	            'transform' : 'translateY(' + x/3 + 'px)',
+	            'opacity': 1 - (x/300)
+	        });
+	    }
+	});
 });
 
 jQuery(document).ready(function($) {

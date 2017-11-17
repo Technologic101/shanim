@@ -7,6 +7,7 @@
 	position: absolute;
 	top:0;
 	left: 0;
+	z-index: 2;
 
 	.logo {
 	    height: 60px;
@@ -27,7 +28,7 @@
 		margin:0px;
 		padding:20px 0;
 		height: 100px;
-		@include span(4);
+		@include span(3);
 		@media #{$bp-tab}{
 			padding:25px 0px;
 		}

@@ -122,6 +122,12 @@ Individual components as necessary.
   overflow:hidden;
 }
 
+.center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 // Wordpress Specific
 $wp-center: 5px auto 5px auto;
 $wp-left:   5px 90px 70px 0;
@@ -168,7 +174,7 @@ a {
 
 // Typography Mixins
 
-@mixin default-font($font-family: $font-1, $font-size: 16px, $line-height: 24px, $color: $c-black){  
+@mixin default-font($font-family: $font-1, $font-size: 16px, $line-height: 24px, $color: $dark-grey){  
   font-family: $font-family;
   font-size: $font-size;
   line-height:$line-height;
