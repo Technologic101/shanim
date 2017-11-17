@@ -27,7 +27,7 @@
 				font-size: 80px;
 				top: 18px;
 				left: -50px;
-				color: $yellow;
+				color: $accent;
 			}
 
 			&::after {
@@ -37,7 +37,7 @@
 				right: -50px;
 				font-family: $font-2;
 				font-size: 80px;
-				color: $yellow;
+				color: $accent;
 			}
 		}
 
@@ -221,5 +221,5 @@
     -webkit-appearance: none;
 }
 .slick-dots li.slick-active button {
-	background-color: $yellow;
+	background-color: $accent;
 }

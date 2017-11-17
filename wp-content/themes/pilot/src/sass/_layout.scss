@@ -10,10 +10,11 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
-.module {
+.module:not(:first-of-type) {
   clear: both;
   margin-bottom: $bottom-margin;
 }
+
 
 // Block Level Elements (for uniform margin)
 // See: https://developer.mozilla.org/en-US/docs/HTML/Block-level_elements

@@ -230,7 +230,7 @@ a {
 
 // Buttons
 
-@mixin button($padding: 5px 10px,$borderColor: $yellow, $textColor:$yellow, $accentColor: $c-white) {
+@mixin button($padding: 5px 10px,$borderColor: $accent, $textColor:$accent, $accentColor: $c-white) {
   padding: $padding;
   border: 2px solid $borderColor;
   color: $textColor;

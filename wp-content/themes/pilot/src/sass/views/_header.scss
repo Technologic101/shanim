@@ -2,7 +2,17 @@
 	margin:0px;
 	padding:0px;
 	width:100%;
-	background: $c-white;
+	background: transparent;
+	height: 100px;
+	position: absolute;
+	top:0;
+	left: 0;
+
+	.logo {
+	    height: 60px;
+	    width: auto;
+	    display: block;
+	}
 
 	.top_section{
 		margin:0 auto;
@@ -16,13 +26,17 @@
 	.site-branding{
 		margin:0px;
 		padding:20px 0;
+		height: 100px;
 		@include span(4);
 		@media #{$bp-tab}{
 			padding:25px 0px;
 		}
 		h1{
 			margin: 0;
-			@include h5-style();
-		}		
+		}
+
+		a {
+			display: inline-block;
+		}
 	}
 }

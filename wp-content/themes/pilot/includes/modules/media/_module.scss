@@ -26,3 +26,11 @@
 		}
 	}
 }
+
+.entry-content {
+  .block-media:first-child {
+	.bg-image {
+		height: 100vh;
+	}
+  }
+}

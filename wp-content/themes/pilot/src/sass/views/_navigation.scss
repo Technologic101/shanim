@@ -1,6 +1,6 @@
 .main-navigation {
 	margin:0px;
-	padding:20px 0;
+	padding:25px 0;
 	text-align:right;
 	@include span(8 at 5);
 
@@ -24,6 +24,7 @@
 		margin:0px;
 		padding:0px;
 		list-style:none;
+		height: 50px;
 
 		li {
 			margin:0 0 0 40px;
@@ -35,8 +36,32 @@
 				padding:0px;
 				display:block;
 				@include default-font;
-				font-size:14px;
-				color:#000;
+				font-size: 16px;
+			    color: #000;
+			    letter-spacing: 2px;
+			    line-height: 50px;
+			    font-weight: bold;
+			    position: relative;
+
+			    &:hover {
+					text-decoration: none;
+
+					&::after {
+						width: 100%;
+						transition: width .4s;
+					}
+			    }
+
+			    &::after {
+					content: "";
+					position: absolute;
+					bottom: 10px;
+					left: 0;
+					height: 2px;
+					width: 0;
+					background-color: black;
+					transition: width .4s;
+			    }
 			}
 		}
 	}
