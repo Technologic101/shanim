@@ -2,7 +2,7 @@
     <div class="top_section">
         <div class="site-branding">
             <h1 class="screen-reader-text">Shani Meyer Zouk and Kizomba in Los Angeles</h1>
-            <a href="<?php echo get_site_url(); ?>"><img class="logo" src="<?php echo get_site_url(); ?>/wp-content/themes/pilot/image/SMDC-ONLY-BLACK.png" alt="Shani Mayer Dance Company" title="Shani Meyer Dance Company" ></a>
+            <a href="<?php echo get_site_url(); ?>"><img class="logo" src="<?php echo get_site_url(); ?>/wp-content/themes/pilot/image/SMDC-ONLY-white.png" alt="Shani Mayer Dance Company" title="Shani Meyer Dance Company" ></a>
         </div><!-- .site-branding -->
         <nav id="site-navigation" class="main-navigation">
             <a class="screen-reader-text" href="#content"><?php _e( 'Skip to content', 'pilot' ); ?></a>

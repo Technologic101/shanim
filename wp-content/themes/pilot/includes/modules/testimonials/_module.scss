@@ -2,6 +2,8 @@
 	background-color: black;
 	padding: $block-padding 0 60px;
 
+    @extend .clearfix; 
+
 	.testimonials {
 		text-align: center;
 		@include span(8);
@@ -129,8 +131,6 @@
 {
     display: none;
     float: left;
-
-    height: 100%;
     min-height: 1px;
 }
 [dir='rtl'] .slick-slide

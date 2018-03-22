@@ -37,24 +37,6 @@
 			}			
 		}
 	}
-	function acf_load_cdn_field_choices( $field ) {
-	    $field['choices'] = array();
-		$type = get_field('theme_type', 'option');
-		$gender = get_field('theme_gender', 'option');
-		$url = 'http://fitmaster.wpengine.com/wp-json/wp/v2/media?filter[media_category]='.$type.'%2B'.$gender;
-		$ch = curl_init(); 
-		curl_setopt($ch, CURLOPT_URL, $url); 
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
-		$output = curl_exec($ch); 
-		$media = json_decode($output);
-		foreach( $media as $media ){
-			$url = $media->source_url;
-			$field['choices'][$url] = "<img width='100px' src='".$url."'>";
-		}
-		curl_close($ch);    
-		return $field;   
-	}
-	add_filter('acf/load_field/name=cdn_image', 'acf_load_cdn_field_choices');
 	
 	function asset_path($filename) {
 		$dist_path = get_template_directory_uri() . DIST_DIR;

@@ -5427,7 +5427,10 @@ Individual components as necessary.
 .margin-bottom {
   padding-top: 5% !important; }
 
-.clearfix:after, .table-links div:after {
+.dark-background {
+  background-color: #8a8a8a !important; }
+
+.clearfix:after, .table-links div:after, .block-testimonials:after {
   content: "";
   display: table;
   clear: both; }
@@ -5529,14 +5532,14 @@ a {
 
 h1 {
   font-family: "Montseratt", sans-serif;
-  font-size: 60px;
-  line-height: 80px;
+  font-size: 40px;
+  line-height: 50px;
   color: #333; }
 
 h2 {
   font-family: "Montseratt", sans-serif;
-  font-size: 60px;
-  line-height: 80px;
+  font-size: 40px;
+  line-height: 50px;
   color: #333; }
 
 h3 {
@@ -5590,11 +5593,11 @@ html {
 
 .module {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  background-color: #FEFEFA; }
 
 .module:not(:first-of-type) {
-  clear: both;
-  margin-bottom: 5%; }
+  clear: both; }
 
 address, figcaption, ol, article, figure, output, aside,
 p, audio, form, pre, h1, h2, h3, h4, h5, h6, canvas, table,
@@ -5607,7 +5610,7 @@ p {
   line-height: 24px;
   color: #8a8a8a; }
 
-section, header, footer, blockquote {
+section, header, footer, blockquote, article.page {
   margin: 0; }
 
 ul, ol {
@@ -5659,7 +5662,7 @@ dl {
         line-height: 24px;
         color: #8a8a8a;
         font-size: 16px;
-        color: #000;
+        color: white;
         letter-spacing: 2px;
         line-height: 50px;
         font-weight: bold;
@@ -5676,7 +5679,7 @@ dl {
           left: 0;
           height: 2px;
           width: 0;
-          background-color: black;
+          background-color: white;
           transition: width .4s; }
 
 @media only screen and (max-width: 768px) {
@@ -5721,12 +5724,13 @@ dl {
   margin: 0px;
   padding: 0px;
   width: 100%;
-  background: transparent;
+  background: rgba(100, 100, 100, 0.3);
   height: 100px;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2; }
+  z-index: 2;
+  box-shadow: 2px 2px 3px -1px rgba(100, 100, 100, 0.35); }
   .site-header .logo {
     height: 60px;
     width: auto;
@@ -6204,9 +6208,7 @@ img.mfp-img {
     padding: 0px;
     position: relative;
     display: table;
-    height: 700px; }
-    .block-alternating .alternating-section:first-child {
-      padding: 13px 0 0 0; }
+    height: 500px; }
   .block-alternating .alt-block-image {
     width: 50%;
     padding: 0px;
@@ -6225,7 +6227,7 @@ img.mfp-img {
     margin: 0 auto;
     text-align: left; }
     .block-alternating .innersection a {
-      display: inline-block; }
+      display: none; }
     .block-alternating .innersection h2 {
       font-family: "Montseratt", sans-serif;
       font-size: 50px;
@@ -6246,20 +6248,24 @@ img.mfp-img {
       line-height: 180px; }
 
 .block-generic_content {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #FEFEFA; }
-  .block-generic_content:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  @media only screen and (max-width: 1240px) {
-    .block-generic_content {
-      padding-left: 20px;
-      padding-right: 20px; } }
+  width: 100%;
+  background-color: #FEFEFA;
+  text-align: center;
+  padding: 5%; }
+  .block-generic_content .layout-content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-right: auto; }
+    .block-generic_content .layout-content:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    @media only screen and (max-width: 1240px) {
+      .block-generic_content .layout-content {
+        padding-left: 20px;
+        padding-right: 20px; } }
   .block-generic_content .gc-wrap h3 {
     font-family: "Montseratt", sans-serif;
     font-size: 40px;
@@ -6307,8 +6313,8 @@ img.mfp-img {
     transform: translateY(-50%); }
     .block-media .bg-image .title h2 {
       font-family: "Montseratt", sans-serif;
-      font-size: 60px;
-      line-height: 80px;
+      font-size: 40px;
+      line-height: 50px;
       color: white;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
     .block-media .bg-image .title .subtitle {
@@ -6336,6 +6342,9 @@ img.mfp-img {
         color: #333;
         transition: .2s;
         transform: scale(1.1); }
+
+.block-media .video {
+  height: 100%; }
 
 .entry-content .block-media:first-child {
   position: relative;
@@ -6767,7 +6776,6 @@ img.mfp-img {
 .slick-slide {
   display: none;
   float: left;
-  height: 100%;
   min-height: 1px; }
 
 [dir='rtl'] .slick-slide {

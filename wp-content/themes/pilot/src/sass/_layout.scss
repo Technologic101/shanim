@@ -13,12 +13,11 @@ html {
 .module {
   position: relative;
   z-index: 1;
+  background-color: $off-white;
 }
 .module:not(:first-of-type) {
   clear: both;
-  margin-bottom: $bottom-margin;
 }
-
 
 // Block Level Elements (for uniform margin)
 // See: https://developer.mozilla.org/en-US/docs/HTML/Block-level_elements
@@ -31,7 +30,7 @@ p{
 	@include default-font;
 }
 // Generally used as containers
-section, header, footer, blockquote {
+section, header, footer, blockquote, article.page {
     margin: 0;
 }
 

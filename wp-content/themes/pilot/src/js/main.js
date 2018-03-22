@@ -15,10 +15,10 @@ jQuery(document).ready(function($) {
 	$(document).scroll(function() {
 	    var x = $(this).scrollTop();
 	    if ( $(window).width() > 768 ) {
-	        $('.home .block-media .bg-image').css({
+	        $('.home .block-media:first-child .bg-image').css({
 	            'transform' : 'translateY(' + x/1.5 + 'px)'
 	        });
-	        $('.home .block-media .title-wrap').css({
+	        $('.home .block-media:first-child .title-wrap').css({
 	            'transform' : 'translateY(' + x/3 + 'px)',
 	            'opacity': 1 - (x/300)
 	        });

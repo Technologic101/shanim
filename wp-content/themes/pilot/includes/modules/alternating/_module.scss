@@ -10,11 +10,7 @@
 		padding:0px;
 		position: relative;
 		display: table;
-		height: 700px;
-		
-		&:first-child {
-			padding:13px 0 0 0;
-		}
+		height: 500px;
 	}
 	.alt-block-image{
 		width:50%;
@@ -37,7 +33,7 @@
 		text-align:left;
 		
 		a{
-			display:inline-block;
+			display: none;
 		}
 
 		h2 {

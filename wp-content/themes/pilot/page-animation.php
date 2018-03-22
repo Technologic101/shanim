@@ -1,7 +1,5 @@
 <?php
-/*
-Template Name: Animation
-*/
+
 get_header(); ?>
 
 <div class="sample">

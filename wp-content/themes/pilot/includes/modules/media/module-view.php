@@ -51,8 +51,7 @@
 							</section>
 						</div>
 					</div>           
-	      </div>	            
-			</div>
+	      </div>
             
 		<?php endif; ?>
         
@@ -63,35 +62,35 @@
 	                 data-vide-bg="mp4: <?php echo $arg['video_file_mp4']; ?>,poster: <?php echo $arg['fallback_image_url']; ?>"
 	            >
 	      </div>
-				<div class="title">
-					<div class="title-wrap">
-						<section class="wow fadeInUp animated" data-wow-duration="1s">
-							<span class="subtitle"><?php echo $arg['subtitle']; ?></span>
-							<?php if( isset( $arg['title'] ) ) : ?>
-								<div class="text_effect">
-									<div class="effect">
-										<span data-letters="<?php echo $arg['title']; ?>"><?php echo $arg['title']; ?></span>
-									</div>
+			<div class="title">
+				<div class="title-wrap">
+					<section class="wow fadeInUp animated" data-wow-duration="1s">
+						<span class="subtitle"><?php echo $arg['subtitle']; ?></span>
+						<?php if( isset( $arg['title'] ) ) : ?>
+							<div class="text_effect">
+								<div class="effect">
+									<span data-letters="<?php echo $arg['title']; ?>"><?php echo $arg['title']; ?></span>
 								</div>
-							<?php endif; ?>
-							<?php if( isset( $arg['logo'] ) ) : ?>
-								<img src="<?php echo $arg['logo']['url']; ?>">
-							<?php endif; ?>
-							<?php if( $arg['button_href'] ) : ?>
-								<a href="<?php echo $arg['button_href']; ?>">
-									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-									viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
-										<path d="M20,0C9,0,0,9,0,20s9,20,20,20c11,0,20-9,20-20S31,0,20,0z M15.4,30V10l13.3,10L15.4,30z"/>
-									</svg>
-									<?php echo $arg['button_text']; ?>
-								</a>
-							<?php endif; ?>
-						</section>
-					</div>
-				</div>           
+							</div>
+						<?php endif; ?>
+						<?php if( isset( $arg['logo'] ) ) : ?>
+							<img src="<?php echo $arg['logo']['url']; ?>">
+						<?php endif; ?>
+						<?php if( $arg['button_href'] ) : ?>
+							<a href="<?php echo $arg['button_href']; ?>">
+								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+									<path d="M20,0C9,0,0,9,0,20s9,20,20,20c11,0,20-9,20-20S31,0,20,0z M15.4,30V10l13.3,10L15.4,30z"/>
+								</svg>
+								<?php echo $arg['button_text']; ?>
+							</a>
+						<?php endif; ?>
+					</section>
+				</div>
+			</div>           
 
-        <div class="img-overlay" style="background-color: <?php echo $arg['overlay_color']; ?>; opacity: <?php echo $arg['overlay_opacity']; ?>;"></div>
-      </div>
+	        <div class="img-overlay" style="background-color: <?php echo $arg['overlay_color']; ?>; opacity: <?php echo $arg['overlay_opacity']; ?>;"></div>
+	    </div>
 		<?php endif; ?>
 	</div>
 <?php endforeach; ?>

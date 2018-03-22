@@ -2,12 +2,13 @@
 	margin:0px;
 	padding:0px;
 	width:100%;
-	background: transparent;
+    background: rgba(100,100,100,.3);
 	height: 100px;
 	position: absolute;
 	top:0;
 	left: 0;
 	z-index: 2;
+    box-shadow: 2px 2px 3px -1px rgba(100,100,100,.35);
 
 	.logo {
 	    height: 60px;
