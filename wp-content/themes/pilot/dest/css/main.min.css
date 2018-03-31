@@ -5530,6 +5530,14 @@ a {
   a:hover, a:active, a:focus, a:visited {
     color: inherit; }
 
+.entry-title {
+  text-align: center;
+  color: #97c1e7;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-weight: normal;
+  letter-spacing: 3px; }
+
 h1 {
   font-family: "Montseratt", sans-serif;
   font-size: 40px;
@@ -5598,6 +5606,19 @@ html {
 
 .module:not(:first-of-type) {
   clear: both; }
+
+.page-template-default .entry-content, .single .entry-content {
+  max-width: 1040px;
+  width: 100%;
+  padding: 2em 3em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FEFEFA;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
+  margin-bottom: 2em; }
 
 address, figcaption, ol, article, figure, output, aside,
 p, audio, form, pre, h1, h2, h3, h4, h5, h6, canvas, table,
@@ -5726,11 +5747,28 @@ dl {
   width: 100%;
   background: rgba(100, 100, 100, 0.3);
   height: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
   z-index: 2;
   box-shadow: 2px 2px 3px -1px rgba(100, 100, 100, 0.35); }
+  .site-header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: -1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#565656+0,648199+100 */
+    background: #565656;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #565656 0%, #648199 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #565656 0%, #648199 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #565656 0%, #648199 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#565656', endColorstr='#648199',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
   .site-header .logo {
     height: 60px;
     width: auto;
@@ -5758,9 +5796,17 @@ dl {
     .site-header .site-branding a {
       display: inline-block; }
 
+.page-template-page-module .site-header {
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .page-template-page-module .site-header::before {
+    display: none; }
+
 .site-footer {
   padding: 5% 0;
   background-color: #333;
+  border-top: 5px solid #97c1e7;
   color: #FEFEFA;
   text-align: center;
   letter-spacing: 2px;
@@ -6342,6 +6388,9 @@ img.mfp-img {
         color: #333;
         transition: .2s;
         transform: scale(1.1); }
+  .block-media .bg-image .video + .title {
+    position: absolute;
+    width: 100%; }
 
 .block-media .video {
   height: 100%; }
@@ -6717,8 +6766,7 @@ img.mfp-img {
       line-height: 50px;
       font-weight: normal;
       margin-bottom: 0;
-      display: block;
-      line-height: .8; }
+      display: block; }
 
 .slick-slider {
   position: relative;
@@ -6776,7 +6824,9 @@ img.mfp-img {
 .slick-slide {
   display: none;
   float: left;
-  min-height: 1px; }
+  min-height: 1px;
+  padding-left: 50px;
+  padding-right: 50px; }
 
 [dir='rtl'] .slick-slide {
   float: right; }
@@ -6830,7 +6880,7 @@ img.mfp-img {
   line-height: 0;
   display: block;
   width: 10px;
-  height: 10px;
+  height: 16px;
   border-radius: 50%;
   background-color: #8a8a8a;
   cursor: pointer;
@@ -6856,7 +6906,7 @@ img.mfp-img {
   margin: 0 auto; }
 
 body {
-  background: #FEFEFA;
+  background: #444;
   margin: 0px;
   padding: 0px; }
 
@@ -6869,5 +6919,9 @@ body {
     content: " ";
     display: block;
     clear: both; }
+
+.modalContent__image {
+  top: 25px;
+  width: 97%; }
 
 /*# sourceMappingURL=main.min.css.map */

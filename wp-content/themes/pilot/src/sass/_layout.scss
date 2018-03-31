@@ -19,6 +19,22 @@ html {
   clear: both;
 }
 
+.page-template-default, .single {
+  .entry-content {
+    max-width: 1040px;
+    width: 100%;
+    padding: 2em 3em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $off-white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    position: relative;
+    z-index: 10;
+    margin-bottom: 2em;
+  }
+}
+
 // Block Level Elements (for uniform margin)
 // See: https://developer.mozilla.org/en-US/docs/HTML/Block-level_elements
 address,figcaption,ol,article,figure,output,aside,

@@ -27,30 +27,31 @@
 
 		<?php if( isset( $arg['image_url'] )) : ?>
 			<div class="bg-image" style="background-image: url(<?php echo $arg['image_url']; ?>);">
-				<div class="img-overlay" style="background-color: <?php echo $arg['overlay_color']; ?>; opacity: <?php echo $arg['overlay_opacity']; ?>;"></div>
-					<div class="title">
-        		<div class="title-wrap">
-							<section class="wow fadeInUp animated" data-wow-duration="1s">
-								<?php if( isset( $arg['title'] ) ) : ?>
-									<h2><?php echo $arg['title']; ?></h2>
-								<?php endif; ?>
+				<div class="img-overlay" style="background-color: <?php echo $arg['overlay_color']; ?>; opacity: <?php echo $arg['overlay_opacity']; ?>;">
+				</div>
+				<div class="title">
+        			<div class="title-wrap">
+						<section class="wow fadeInUp animated" data-wow-duration="1s">
+							<?php if( isset( $arg['title'] ) ) : ?>
+								<h2><?php echo $arg['title']; ?></h2>
+							<?php endif; ?>
 
-                <?php if( isset( $arg['subtitle'] ) ) : ?>
-									<span class="subtitle"><?php echo $arg['subtitle']; ?></span>
-								<?php endif; ?>
-								
-								<?php if( isset( $arg['logo'] ) ) : ?>
-									<img src="<?php echo $arg['logo']['url']; ?>">
-								<?php endif; ?>
-								
-								<?php if( $arg['button_href'] ) : ?>
-									<a href="<?php echo $arg['button_href']; ?>">
-										<?php echo $arg['button_text']; ?>
-									</a>
-								<?php endif; ?>
-							</section>
-						</div>
-					</div>           
+				            <?php if( isset( $arg['subtitle'] ) ) : ?>
+								<span class="subtitle"><?php echo $arg['subtitle']; ?></span>
+							<?php endif; ?>
+							
+							<?php if( isset( $arg['logo'] ) ) : ?>
+								<img src="<?php echo $arg['logo']['url']; ?>">
+							<?php endif; ?>
+							
+							<?php if( $arg['button_href'] ) : ?>
+								<a href="<?php echo $arg['button_href']; ?>">
+									<?php echo $arg['button_text']; ?>
+								</a>
+							<?php endif; ?>
+						</section>
+					</div>
+				</div>           
 	      </div>
             
 		<?php endif; ?>
@@ -65,23 +66,20 @@
 			<div class="title">
 				<div class="title-wrap">
 					<section class="wow fadeInUp animated" data-wow-duration="1s">
-						<span class="subtitle"><?php echo $arg['subtitle']; ?></span>
 						<?php if( isset( $arg['title'] ) ) : ?>
-							<div class="text_effect">
-								<div class="effect">
-									<span data-letters="<?php echo $arg['title']; ?>"><?php echo $arg['title']; ?></span>
-								</div>
-							</div>
+							<h2><?php echo $arg['title']; ?></h2>
 						<?php endif; ?>
+
+			            <?php if( isset( $arg['subtitle'] ) ) : ?>
+							<span class="subtitle"><?php echo $arg['subtitle']; ?></span>
+						<?php endif; ?>
+						
 						<?php if( isset( $arg['logo'] ) ) : ?>
 							<img src="<?php echo $arg['logo']['url']; ?>">
 						<?php endif; ?>
+						
 						<?php if( $arg['button_href'] ) : ?>
 							<a href="<?php echo $arg['button_href']; ?>">
-								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-								viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
-									<path d="M20,0C9,0,0,9,0,20s9,20,20,20c11,0,20-9,20-20S31,0,20,0z M15.4,30V10l13.3,10L15.4,30z"/>
-								</svg>
 								<?php echo $arg['button_text']; ?>
 							</a>
 						<?php endif; ?>
@@ -90,7 +88,7 @@
 			</div>           
 
 	        <div class="img-overlay" style="background-color: <?php echo $arg['overlay_color']; ?>; opacity: <?php echo $arg['overlay_opacity']; ?>;"></div>
-	    </div>
+	    	</div>
 		<?php endif; ?>
 	</div>
 <?php endforeach; ?>

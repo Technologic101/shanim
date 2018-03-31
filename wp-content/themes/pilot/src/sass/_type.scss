@@ -31,6 +31,15 @@ a {
 
 // Headings 
 
+.entry-title {
+  text-align: center;
+  color: $accent;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
 h1 {
   @include h2-style();
 }

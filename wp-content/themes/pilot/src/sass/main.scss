@@ -38,7 +38,7 @@
 // Global Rules
 
 body{
-	background: $off-white;
+	background: #444;
 	margin:0px;
 	padding:0px;
 }
@@ -46,4 +46,9 @@ body{
 .container{
 	@include container($container);
 	overflow: hidden;
+}
+
+.modalContent__image {
+	top: 25px;
+	width: 97%;
 }

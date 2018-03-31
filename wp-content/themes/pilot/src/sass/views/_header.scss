@@ -4,11 +4,26 @@
 	width:100%;
     background: rgba(100,100,100,.3);
 	height: 100px;
-	position: absolute;
-	top:0;
-	left: 0;
 	z-index: 2;
     box-shadow: 2px 2px 3px -1px rgba(100,100,100,.35);
+
+    &::before {
+    	content: "";
+    	display: block;
+    	position: absolute;
+    	left: 0;
+    	top: 0;
+    	width: 100%;
+    	height: 100px;
+    	z-index: -1;
+    	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#565656+0,648199+100 */
+		background: #565656; /* Old browsers */
+		background: -moz-linear-gradient(-45deg,  #565656 0%, #648199 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-45deg,  #565656 0%,#648199 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(135deg,  #565656 0%,#648199 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#565656', endColorstr='#648199',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    }
 
 	.logo {
 	    height: 60px;
@@ -39,6 +54,18 @@
 
 		a {
 			display: inline-block;
+		}
+	}
+}
+
+.page-template-page-module {
+	.site-header {
+		position: absolute;
+		top:0;
+		left: 0;
+
+		&::before {
+			display: none;
 		}
 	}
 }

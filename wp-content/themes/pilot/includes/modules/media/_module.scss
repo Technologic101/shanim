@@ -25,6 +25,11 @@
 				@include button(5px 10px, $c-white, $c-white, $c-black);
 			}
 		}
+
+		.video + .title {
+			position: absolute;
+			width: 100%;
+		}
 	}
 
 	.video {
