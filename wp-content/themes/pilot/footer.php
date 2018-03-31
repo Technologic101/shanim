@@ -3,6 +3,6 @@
 			<?php get_template_part( 'views/footer' ); ?>
 		</div><!-- /site -->
 		<?php wp_footer(); ?>
-		<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us2.list-manage.com","uuid":"fd7d4b0db2ddb2aae50ceb4ca","lid":"ce256a2760"}) })</script>
+		<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/fd7d4b0db2ddb2aae50ceb4ca/9ea38f338dbc3c15289d15fab.js");</script>
 	</body>
 </html>

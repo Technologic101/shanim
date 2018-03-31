@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - The Events Calendar - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-11-26 13:42:00+0000\n"
+"PO-Revision-Date: 2018-02-06 13:11:57+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,10 +19,10 @@ msgstr ""
 msgid "The number of events per page on the List View. Does not affect other views."
 msgstr ""
 
-#: src/Tribe/Rewrite.php:257
+#: src/Tribe/Rewrite.php:264
 msgctxt "The \"/page/\" URL string component."
 msgid "page"
-msgstr ""
+msgstr "pagina"
 
 #: src/Tribe/REST/V1/Endpoints/Single_Organizer.php:143
 msgid "An organizer with the specified event does not exist."
@@ -54,11 +54,11 @@ msgstr ""
 
 #: common/src/Tribe/Validate.php:184
 msgid "%s must not be empty"
-msgstr ""
+msgstr "%s mag niet leeg zijn"
 
 #: src/functions/template-tags/general.php:1312
 msgid "Calendar powered by %s"
-msgstr ""
+msgstr "Kalender mogelijk gemaakt door %s"
 
 #: src/admin-views/tribe-options-general.php:78
 msgid "The current URL for your events page is %1$s. <br><br> You cannot edit the slug for your events page as you do not have pretty permalinks enabled. In order to edit the slug here, <a href=\"%2$s\">enable pretty permalinks</a>."
@@ -104,10 +104,10 @@ msgstr ""
 msgid "Event Aggregator will try to fetch %s events starting from the current date or the specified date;"
 msgstr ""
 
-#: src/Tribe/iCal.php:424
+#: src/Tribe/iCal.php:411
 msgctxt "iCal feed description"
 msgid "Events for %s"
-msgstr ""
+msgstr "Evenementen voor %s"
 
 #: src/Tribe/REST/V1/Messages.php:45
 msgid "The requested event term archive page does not exist"
@@ -440,19 +440,19 @@ msgstr ""
 
 #: src/Tribe/REST/V1/Endpoints/Single_Event.php:263
 msgid "The event timezone"
-msgstr ""
+msgstr "Tijdzone evenement"
 
 #: src/Tribe/REST/V1/Endpoints/Single_Event.php:250
 msgid "The event excerpt"
-msgstr ""
+msgstr "Samenvatting evenement"
 
 #: src/Tribe/REST/V1/Endpoints/Single_Event.php:238
 msgid "The event description"
-msgstr ""
+msgstr "Beschrijving evenement"
 
 #: src/Tribe/REST/V1/Endpoints/Single_Event.php:232
 msgid "The event title"
-msgstr ""
+msgstr "Titel evenement"
 
 #: src/Tribe/REST/V1/Endpoints/Single_Event.php:226
 msgid "The event publication date (UTC timezone)"
@@ -812,19 +812,19 @@ msgstr ""
 
 #: src/Tribe/Aggregator/Tabs/Abstract.php:128
 msgid "click here to edit it"
-msgstr ""
+msgstr "klik hier om te bewerken"
 
 #: src/Tribe/Aggregator/Settings.php:300
 msgid "Do not limit (not recommended)"
-msgstr ""
+msgstr "Geen limiet (niet aangeraden)"
 
 #: src/Tribe/Aggregator/Settings.php:299
 msgid "By number of events"
-msgstr ""
+msgstr "Op aantal evenementen"
 
 #: src/Tribe/Aggregator/Settings.php:298
 msgid "By date range"
-msgstr ""
+msgstr "Op datum reeks"
 
 #: src/Tribe/Aggregator/Service.php:567
 msgctxt "The placeholder is for the localized version of the iCal UID specification link"
@@ -902,7 +902,7 @@ msgstr "Bewerk evenement-instellingen."
 
 #: src/Tribe/Main.php:959
 msgid "Edit the %s slug"
-msgstr ""
+msgstr "Bewerk de %s slug"
 
 #: src/Tribe/Linked_Posts.php:984
 msgctxt "Indefinite article for the phrase \"Find a {post type name}\" when the {post type name} starts with a vowel, e.g. \"Find an Organizer\"."
@@ -919,15 +919,15 @@ msgstr ""
 msgid "Hide and Ignore &#8220;%s&#8221;"
 msgstr ""
 
-#: common/src/Tribe/Main.php:283
+#: common/src/Tribe/Main.php:288
 msgid "Clear Selection."
-msgstr ""
+msgstr "Wis selectie."
 
-#: common/src/Tribe/Main.php:282
+#: common/src/Tribe/Main.php:287
 msgid "Select all pages"
 msgstr "Selecteer alle pagina's"
 
-#: common/src/Tribe/Main.php:281
+#: common/src/Tribe/Main.php:286
 msgid "All items on this page were selected. "
 msgstr "Alle items op deze pagina werden geselecteerd."
 
@@ -1971,20 +1971,20 @@ msgstr "Berichttitel Kleur"
 msgid "Single Event"
 msgstr "Eenmalig evenement"
 
-#: src/Tribe/Customizer/Month_Week_View.php:197
+#: src/Tribe/Customizer/Month_Week_View.php:198
 msgid "Calendar Highlight Color"
 msgstr "Kalender kleur arcering"
 
-#: src/Tribe/Customizer/Month_Week_View.php:175
+#: src/Tribe/Customizer/Month_Week_View.php:176
 msgid "Calendar Table Color"
 msgstr "Kalender kleur tabel"
 
-#: src/Tribe/Customizer/Month_Week_View.php:144
+#: src/Tribe/Customizer/Month_Week_View.php:145
 #: src/Tribe/Customizer/Single_Event.php:79 src/Tribe/Customizer/Widget.php:60
 msgid "Options selected here will override what was selected in the \"General Theme\" and \"Global Elements\" sections"
 msgstr "Opties die hier geselecteerd zijn, zullen selecties in de secties \"Algemeen thema\" en \"Globale elementen\" overschrijven"
 
-#: src/Tribe/Customizer/Month_Week_View.php:143
+#: src/Tribe/Customizer/Month_Week_View.php:144
 msgid "Month View"
 msgstr "Maandweergave"
 
@@ -2257,7 +2257,7 @@ msgctxt "Static front page setting"
 msgid "Main events page"
 msgstr "Hoofd evenementen pagina"
 
-#: common/src/Tribe/Settings.php:269 common/src/Tribe/Settings.php:270
+#: common/src/Tribe/Settings.php:281 common/src/Tribe/Settings.php:282
 msgid "Events Help"
 msgstr "Evenementen Hulp"
 
@@ -3890,7 +3890,7 @@ msgstr "Als alles volgens plan verloopt, heb je je voorbeeld over een ogenblikje
 
 #: src/Tribe/Aggregator/Page.php:97
 msgid "Please continue to wait while your preview is generated."
-msgstr "Blijf wachten terwijl je voorvertoning wordt gegenereerd."
+msgstr "Blijf wachten terwijl je voorbeeld wordt gegenereerd."
 
 #: src/Tribe/Aggregator/Page.php:96
 msgid "Please wait while your preview is fetched."
@@ -4267,67 +4267,67 @@ msgstr " (opent in een nieuw venster)"
 msgid "Renew Your License Now"
 msgstr "Verleng je licentie nu"
 
-#: common/src/Tribe/Main.php:293
+#: common/src/Tribe/Main.php:298
 msgid ": Selected 1 row"
 msgstr ": 1 rij geselecteerd"
 
-#: common/src/Tribe/Main.php:292
+#: common/src/Tribe/Main.php:297
 msgid ": Selected %d rows"
 msgstr ": %d rijen geselecteerd"
 
-#: common/src/Tribe/Main.php:287
+#: common/src/Tribe/Main.php:292
 msgid "Previous"
 msgstr "Vorige"
 
-#: common/src/Tribe/Main.php:285
+#: common/src/Tribe/Main.php:290
 msgid "All"
 msgstr "Alle"
 
-#: common/src/Tribe/Main.php:280
+#: common/src/Tribe/Main.php:285
 msgid "Search:"
 msgstr "Zoeken:"
 
-#: common/src/Tribe/Main.php:279
+#: common/src/Tribe/Main.php:284
 msgid "No matching records found"
 msgstr "Geen resultaten gevonden"
 
-#: common/src/Tribe/Main.php:278
+#: common/src/Tribe/Main.php:283
 msgid "(filtered from _MAX_ total entries)"
 msgstr "(gefilterd van _MAX_ totale resultaten)"
 
-#: common/src/Tribe/Main.php:277
+#: common/src/Tribe/Main.php:282
 msgid "Showing 0 to 0 of 0 entries"
 msgstr "Toont 0 tot 0 van 0 resultaten"
 
-#: common/src/Tribe/Main.php:276
+#: common/src/Tribe/Main.php:281
 msgid "Showing _START_ to _END_ of _TOTAL_ entries"
 msgstr "Toont _START_ tot _END_ van _TOTAL_ resultaten"
 
-#: common/src/Tribe/Main.php:275
+#: common/src/Tribe/Main.php:280
 msgid "No data available in table"
 msgstr "Geen data beschikbaar in tabel"
 
-#: common/src/Tribe/Main.php:274
+#: common/src/Tribe/Main.php:279
 msgid "Show _MENU_ entries"
 msgstr "Toon _MENU_ entries"
 
-#: common/src/Tribe/Main.php:272
+#: common/src/Tribe/Main.php:277
 msgid ": activate to sort column descending"
 msgstr ": activeer om de kolom aflopend te sorteren"
 
-#: common/src/Tribe/Main.php:271
+#: common/src/Tribe/Main.php:276
 msgid ": activate to sort column ascending"
 msgstr ": activeer om de kolom oplopend te sorteren"
 
-#: common/src/Tribe/Main.php:252
+#: common/src/Tribe/Main.php:257
 msgid "Press \"Cmd + C\" to copy"
 msgstr "Druk op \"Ctrl + C\" om te kopiëren"
 
-#: common/src/Tribe/Main.php:251
+#: common/src/Tribe/Main.php:256
 msgid "System info copied"
 msgstr "Systeeminformatie gekopieerd"
 
-#: common/src/Tribe/Main.php:250
+#: common/src/Tribe/Main.php:255
 #: common/src/admin-views/tribe-options-help.php:50
 msgid "Copy to clipboard"
 msgstr "Kopieer naar klembord"
@@ -4681,7 +4681,7 @@ msgstr "%1$s gepland voor:%2$s. %3$sPreview%4$s"
 
 #: src/Tribe/Main.php:1781
 msgid "%1$s submitted. %2$sPreview %3$s"
-msgstr "%1$s ingediend. %2$sBekijk voorvertoning van %3$s"
+msgstr "%1$s ingediend. %2$sVoorbeeld %3$s"
 
 #: src/Tribe/Main.php:1763
 msgid "%1$s updated. %2$sView %1$s%3$s"
@@ -5722,7 +5722,7 @@ msgstr "Je moet minstens één weergave selecteren."
 
 #: src/admin-views/tribe-options-display.php:165
 msgid "Enable event views"
-msgstr "Schakel event vieuw in"
+msgstr "Schakel evenement weergave in"
 
 #: src/admin-views/tribe-options-display.php:157
 msgid "Choose a page template to control the appearance of your calendar and event content."
@@ -6338,7 +6338,7 @@ msgstr "Thailand"
 
 #: common/src/Tribe/Languages/Locations.php:270
 msgid "Tanzania, United Republic of"
-msgstr ""
+msgstr "Tanzania"
 
 #: common/src/Tribe/Languages/Locations.php:269
 msgid "Tajikistan"
@@ -6714,11 +6714,11 @@ msgstr "Koeweit"
 
 #: common/src/Tribe/Languages/Locations.php:172
 msgid "Korea, Republic of"
-msgstr ""
+msgstr "Zuid-Korea"
 
 #: common/src/Tribe/Languages/Locations.php:171
 msgid "Korea, Democratic People's Republic of"
-msgstr ""
+msgstr "Noord-Korea"
 
 #: common/src/Tribe/Languages/Locations.php:170
 msgid "Kiribati"
@@ -6762,7 +6762,7 @@ msgstr "Irak"
 
 #: common/src/Tribe/Languages/Locations.php:160
 msgid "Iran, Islamic Republic of"
-msgstr ""
+msgstr "Iran"
 
 #: common/src/Tribe/Languages/Locations.php:159
 msgid "Indonesia"
@@ -7333,45 +7333,45 @@ msgstr "Systeem informatie"
 msgid "There are no fields setup for this tab yet."
 msgstr "Er zijn nog geen velden voor deze tab."
 
-#: common/src/Tribe/Settings.php:597
+#: common/src/Tribe/Settings.php:621
 msgid "The above setting was not saved. Other settings were successfully saved."
 msgid_plural "The above settings were not saved. Other settings were successfully saved."
 msgstr[0] "De bovenstaande instelling is niet opgeslagen. De overige instellingen zijn met succes opgeslagen."
 msgstr[1] "De bovenstaande instellingen zijn niet opgeslagen. De overige instellingen zijn met succes opgeslagen."
 
-#: common/src/Tribe/Settings.php:596
+#: common/src/Tribe/Settings.php:620
 msgid "None of your settings were saved. Please try again."
 msgstr "Geen van je instellingen is opgeslagen. Probeer het nogmaals."
 
-#: common/src/Tribe/Settings.php:586
+#: common/src/Tribe/Settings.php:610
 msgid "Your form had the following errors:"
 msgstr "Je formulier heeft de volgende fouten:"
 
-#: common/src/Tribe/Settings.php:419
+#: common/src/Tribe/Settings.php:431
 msgid "The request wasn't sent from this tab."
 msgstr "Het verzoek was niet verstuurd van deze tab."
 
-#: common/src/Tribe/Settings.php:413
+#: common/src/Tribe/Settings.php:425
 msgid "The request was sent insecurely."
 msgstr "Het verzoek was onbeveiligd verstuurd."
 
-#: common/src/Tribe/Settings.php:407
+#: common/src/Tribe/Settings.php:419
 msgid "You don't have permission to do that."
 msgstr "Je hebt geen toestemming om dat te doen."
 
-#: common/src/Tribe/Settings.php:359 src/Tribe/Aggregator/Page.php:89
+#: common/src/Tribe/Settings.php:371 src/Tribe/Aggregator/Page.php:89
 msgid "Save Changes"
 msgstr "Wijzigingen opslaan"
 
-#: common/src/Tribe/Settings.php:351
+#: common/src/Tribe/Settings.php:363
 msgid "You've requested a non-existent tab."
 msgstr "Je hebt om een niet bestaande tab verzocht."
 
-#: common/src/Tribe/Settings.php:337
+#: common/src/Tribe/Settings.php:349
 msgid "%s Settings"
 msgstr "%s instellingen"
 
-#: common/src/Tribe/Settings.php:241 common/src/Tribe/Settings.php:261
+#: common/src/Tribe/Settings.php:253 common/src/Tribe/Settings.php:273
 msgid "Events Settings"
 msgstr "Evenementinstellingen"
 
@@ -7450,7 +7450,7 @@ msgstr "Lijst"
 msgid "Calendar"
 msgstr "Kalender"
 
-#: common/src/Tribe/Settings.php:242
+#: common/src/Tribe/Settings.php:254
 #: src/Tribe/Admin/Bar/Default_Configurator.php:89 src/Tribe/Main.php:4298
 msgid "Settings"
 msgstr "Instellingen"
@@ -7526,20 +7526,20 @@ msgstr "pagina"
 msgid "Network"
 msgstr "Netwerk"
 
-#: common/src/Tribe/Main.php:305
+#: common/src/Tribe/Main.php:310
 msgid "Done"
 msgstr "Gereed"
 
-#: common/src/Tribe/Main.php:304 src/Tribe/Asset/Bootstrap_Datepicker.php:27
+#: common/src/Tribe/Main.php:309 src/Tribe/Asset/Bootstrap_Datepicker.php:27
 #: src/functions/template-tags/day.php:104
 msgid "Today"
 msgstr "Vandaag"
 
-#: common/src/Tribe/Main.php:303
+#: common/src/Tribe/Main.php:308
 msgid "Prev"
 msgstr "Vorige"
 
-#: common/src/Tribe/Main.php:286 common/src/Tribe/Main.php:302
+#: common/src/Tribe/Main.php:291 common/src/Tribe/Main.php:307
 msgid "Next"
 msgstr "Volgende"
 
@@ -7730,7 +7730,7 @@ msgstr "lijst"
 msgid "month"
 msgstr "maand"
 
-#. #-#-#-#-#  the-events-calendar-code.pot (The Events Calendar 4.6.10) 
+#. #-#-#-#-#  the-events-calendar-code.pot (The Events Calendar 4.6.11.1) 
 #. #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: common/src/Tribe/Admin/Help_Page.php:59 common/src/Tribe/Customizer.php:569
@@ -7745,8 +7745,8 @@ msgstr "The Events Calendar"
 msgid "Event"
 msgstr "Evenement"
 
-#: common/src/Tribe/Settings.php:165 common/src/Tribe/Settings.php:229
-#: common/src/Tribe/Settings.php:230 src/Tribe/Importer/Admin_Page.php:206
+#: common/src/Tribe/Settings.php:177 common/src/Tribe/Settings.php:241
+#: common/src/Tribe/Settings.php:242 src/Tribe/Importer/Admin_Page.php:206
 #: src/Tribe/Main.php:1126 src/functions/template-tags/general.php:95
 msgid "Events"
 msgstr "Evenementen"
@@ -7781,7 +7781,7 @@ msgstr "Evenementenlijst"
 msgid "A widget that displays upcoming events."
 msgstr "Een widget die toekomstige evenementen weergeeft."
 
-#: common/src/Tribe/Settings.php:619 src/Tribe/Importer/Options.php:54
+#: common/src/Tribe/Settings.php:643 src/Tribe/Importer/Options.php:54
 msgid "Settings saved."
 msgstr "Instellingen opgeslagen."
 
@@ -7961,19 +7961,19 @@ msgstr "Het bestand viel weg. Probeer het nogmaals."
 msgid "Import"
 msgstr "Importeren"
 
-#: common/src/Tribe/Field.php:617
+#: common/src/Tribe/Field.php:626
 msgid "No select options specified"
 msgstr "Geen selecteeropties gegeven"
 
-#: common/src/Tribe/Field.php:559
+#: common/src/Tribe/Field.php:568
 msgid "No checkbox options specified"
 msgstr "Geen checkbox-opties gegeven"
 
-#: common/src/Tribe/Field.php:523
+#: common/src/Tribe/Field.php:532
 msgid "No radio options specified"
 msgstr "Geen radio-opties gegeven"
 
-#: common/src/Tribe/Field.php:228
+#: common/src/Tribe/Field.php:231
 msgid "Invalid field type specified"
 msgstr "Ongeldig veldtype gegeven"
 

@@ -23,7 +23,7 @@
 	                </div>
 	                <?php if ($arg['column_link']) : ?>
 	                    <div class="slide-link">
-	                        <a href="<?php echo get_permalink($arg['column_link']->ID); ?>">Link</a>
+	                        <a href="<?php echo get_permalink($arg['column_link']->ID); ?>"><?php echo $arg['column_link_title']; ?></a>
 	                    </div>
 	                <?php endif; ?>
 	            </div>

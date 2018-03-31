@@ -5430,7 +5430,7 @@ Individual components as necessary.
 .dark-background {
   background-color: #8a8a8a !important; }
 
-.clearfix:after, .table-links div:after, .block-testimonials:after {
+.clearfix:after, .module:after, .table-links div:after, .block-testimonials:after {
   content: "";
   display: table;
   clear: both; }
@@ -5618,7 +5618,8 @@ html {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 10;
-  margin-bottom: 2em; }
+  margin-bottom: 3em;
+  margin-top: 3em; }
 
 address, figcaption, ol, article, figure, output, aside,
 p, audio, form, pre, h1, h2, h3, h4, h5, h6, canvas, table,
@@ -5801,7 +5802,7 @@ dl {
   top: 0;
   left: 0; }
   .page-template-page-module .site-header::before {
-    display: none; }
+    opacity: .3; }
 
 .site-footer {
   padding: 5% 0;
@@ -6599,7 +6600,7 @@ img.mfp-img {
   border-bottom: none; }
 
 .block-flexbox_slides {
-  margin-bottom: 5%; }
+  padding-bottom: 3em; }
   .block-flexbox_slides .wrapper {
     display: flex;
     justify-content: space-around;
@@ -6610,7 +6611,8 @@ img.mfp-img {
     color: #333;
     line-height: 50px;
     font-weight: normal;
-    text-align: center; }
+    margin-bottom: 0;
+    padding-bottom: 1rem; }
   .block-flexbox_slides .slide {
     width: 30%;
     margin-bottom: 5%; }

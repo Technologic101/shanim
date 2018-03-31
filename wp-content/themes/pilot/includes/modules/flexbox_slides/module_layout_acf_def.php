@@ -105,7 +105,28 @@ $module_layout = array(
                     'maxlength' => '255',
                     'readonly' => 0,
                     'disabled' => 0,
+                ),
+                array(
+                    'key' => create_key($module,'link_text'),
+                    'label' => 'Link Text',
+                    'name' => 'column_link_text',
+                    'type' => 'text',
+                    'instructions' => '',
+                    'required' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'default_value' => 'See More',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'maxlength' => '255',
+                    'readonly' => 0,
+                    'disabled' => 0,
                 )),
+
 
         ),
     ),
